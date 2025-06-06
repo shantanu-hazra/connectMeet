@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.landingPage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family:Roboto,sans-serif;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:1.9rem
+}
+
+nav .left{
+    font-size: 1.5rem;
+}
+
+nav .right{
+    display: flex;
+    justify-content: space-between;
+    gap:1.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+nav .right div{
+    cursor: pointer;
+}
+
+
+nav .right .login{
+    background-color: orange;
+    width:6rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+nav .right .login p{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center    
+}
+
+.main-body{
+    display: flex;
+    justify-content: space-between;
+    height:80vh;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.main-body img {
+    max-height: 70vh;
+    width: auto;
+    margin-inline: 2rem;
+    object-fit: contain;
+}
+
+.main-body > :nth-child(1){
+    font-size: 1.5rem;
+    padding:1rem
+}
+
+.main-body .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-body .desc p{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-body .desc .get-started{
+    display: flex;
+    background-color: orange;
+    height: 3rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    border-radius:1.25rem;
+    cursor: pointer;
+}
+
+.get-started p{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
