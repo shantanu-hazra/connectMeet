@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
         throw new Error("Please provide all the details");
       }
       let request = await axios.post(
-        `${import.meta.env.EXPRESS_SERVER_ENDPOINT}/api/v1/users/register`,
+        `${import.meta.env.VITE_EXPRESS_SERVER_ENDPOINT}/api/v1/users/register`,
         {
           name: name,
           username: username,
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   const handleLogin = async (username, password) => {
     try {
       let request = await axios.post(
-        `${import.meta.env.EXPRESS_SERVER_ENDPOINT}/api/v1/users/login`,
+        `${import.meta.env.VITE_EXPRESS_SERVER_ENDPOINT}/api/v1/users/login`,
         {
           username: username,
           password: password,
