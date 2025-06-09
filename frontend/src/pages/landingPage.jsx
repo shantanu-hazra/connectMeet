@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/landingPage.css";
-import backgroundImage from "../../public/background.png";
 
 const landing = () => {
   const navigate = useNavigate();
@@ -11,7 +10,7 @@ const landing = () => {
       style={{
         width: "100vw",
         height: "100vh",
-        backgroundImage: backgroundImage,
+        backgroundImage: `url("/background.png")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         color: "white",
