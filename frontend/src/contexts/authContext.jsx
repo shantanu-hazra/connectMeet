@@ -6,7 +6,7 @@ import httpStatus from "http-status";
 export const AuthContext = createContext({});
 
 const client = axios.create({
-  baseURL: `${import.meta.env.VITE_EXPRESS_SERVER_ENDPOINT}`,
+  baseURL: `${import.meta.env.VITE_EXPRESS_SERVER_ENDPOINT}/api/v1/users`,
 });
 
 export const AuthProvider = ({ children }) => {
