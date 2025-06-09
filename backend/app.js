@@ -17,7 +17,7 @@ const server = createServer(app);
 const io = connectToServer(server);
 
 app.set("port", process.env.port || 8080);
-app.use(cors());
+app.use(cors({ origin: process.env.REACT_FRONTEND, credentials: true }));
 app.use(express.json({ limit: "40kb" }));
 app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
