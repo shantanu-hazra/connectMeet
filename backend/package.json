@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon/src/app.js",
+    "build":"vit build",
     "start": "node src/app.js",
     "prod": "pm2 src/app.js"
   },
