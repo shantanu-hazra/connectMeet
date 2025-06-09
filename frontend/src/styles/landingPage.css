@@ -11,17 +11,6 @@ body, html {
     overflow-y: hidden;
 }
 
-.landingPage{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(./background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-family:Roboto,sans-serif;
-    margin: 0;
-    padding-left: 0;
-}
 
 nav{
     display:flex;
