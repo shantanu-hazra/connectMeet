@@ -1,11 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/landingPage.css";
+import backgroundImage from "../../public/background.png";
 
 const landing = () => {
   const navigate = useNavigate();
   return (
-    <div className="landingPage">
+    <div
+      className="landingPage"
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundImage: backgroundImage,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        color: "white",
+        fontFamily: "Roboto, sans-serif",
+      }}
+    >
       <nav>
         <div className="left">
           <h2>ConnectMeet</h2>
