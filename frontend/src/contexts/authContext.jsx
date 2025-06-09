@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
       );
 
       if (request.status === httpStatus.CREATED) {
-        navigate("/home");
+        navigate("/");
       }
     } catch (error) {
       if (error.response) {
@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
       if (request.status === httpStatus.OK) {
         localStorage.setItem("token", request.data.token);
         console.log(request);
-        navigate("/home");
+        navigate("/");
       }
     } catch (e) {
       throw e;
