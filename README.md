@@ -13,10 +13,7 @@ A full-stack application to connect people for meetings via scheduling and real-
 - [Getting Started](#getting-started)  
 - [Configuration](#configuration)  
 - [API Endpoints](#api-endpoints)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Contributing](#contributing)  
-- [License](#license)  
+- [Usage](#usage)    
 
 ---
 
